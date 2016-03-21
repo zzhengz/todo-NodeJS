@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    title= todoApp
+  body
+  
+    form(name="formbox",action="/",method="post")
+      h2 input the content you want to insert:
+        input(type="text",name="txt")
+        input(type="submit",value="submit")
+    .list
+      each entry,i in data
+        li #{entry.todo_id}: #{entry.todo_content}
+
+
+
+
+
+
+
+
+
+
